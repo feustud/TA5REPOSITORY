@@ -21,19 +21,36 @@
         <nav class="main-nav">
             <ul>
                 <li><a href="Index.html">Home</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#portfolio">Portfolio</a></li>
-                <li><a href="#about">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="about.html">About</a></li>
                 <li><a href="contact.html">Contact Us</a></li>
             </ul>
         </nav>
     </header>
 
     <div class="container">
+        <aside class="sidebar">
+            <nav class="sidebar-nav">
+                <ul>
+                    <li><a href="Join.html">Join our Team</a></li>
+                    <li><a href="#link2">Security</a></li>
+                    <li><a href="#link3">Domains</a></li>
+                    <li><a href="#link4">Consultancy</a></li>
+                    <li><a href="#link5">Support</a></li>
+                </ul>
+            </nav>
+        </aside>
+
         <main class="main-content">
             <div class="contact-form">
                 <h2>Contact Us</h2>
-                <form action="submit_contact_form.php" method="POST">
+                <form action="https://formsubmit.co/el/nopinu" method="POST">
+                    <!-- FormSubmit hidden inputs -->
+                    <input type="hidden" name="_subject" value="New Contact Form Submission">
+                    <input type="hidden" name="_captcha" value="false">
+                    <input type="hidden" name="_next" value="https://your-redirect-url.com/thank-you.html">
+
                     <div class="form-group">
                         <label for="fullname">Full Name</label>
                         <input type="text" id="fullname" name="fullname" required>
@@ -52,7 +69,7 @@
                     </div>
                     <div class="form-group">
                         <label for="request">Request Description</label>
-                        <textarea id="request" name="request" rows="5" required></textarea>
+                        <textarea id="request" name="request" rows="5" placeholder="Kindly describe your request — we usually respond within 1 day on business days" required></textarea>
                     </div>
                     <button type="submit">Submit</button>
                 </form>
